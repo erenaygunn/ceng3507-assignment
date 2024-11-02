@@ -1,12 +1,16 @@
+/* Media query for small devices */
 @media screen and (min-width: 576px) {
+	/* Larger padding for nav links */
 	nav a {
 		padding: 10px 20px;
 	}
 
+	/* Increase gap between links */
 	.nav-links {
 		gap: 10px;
 	}
 
+	/* Sidebar adjustments */
 	.sidebar-left,
 	.sidebar-right {
 		flex-direction: column;
@@ -14,14 +18,17 @@
 		gap: 10px;
 	}
 
+	/* gap increase for right sidebar */
 	.sidebar-right {
 		gap: 40px;
 	}
 
+	/* Content section layout change to row*/
 	.content {
 		flex-direction: row;
 	}
 
+	/* Currency box styling */
 	.currency-box {
 		flex-direction: column;
 		border: none;
@@ -30,10 +37,12 @@
 		border-radius: 15px;
 	}
 
+	/* Adjust gap in actions section */
 	.actions {
 		gap: 10px;
 	}
 
+	/* Align items in vertical layout */
 	.wallet,
 	.actions,
 	.user,
@@ -43,23 +52,28 @@
 		align-items: center;
 	}
 
+	/* Full width for action buttons */
 	.action {
 		width: 100%;
 	}
 }
 
+/* Media query for medium devices */
 @media screen and (min-width: 768px) {
+	/* Navbar adjustments */
 	.navbar {
 		justify-content: space-around;
 		padding: 30px 40px;
 	}
 
+	/* Banner styling */
 	.banner {
 		background-color: #133e87;
 		color: #cbdceb;
 		padding: 10px 20px;
 	}
 
+	/* Footer links changed to rows */
 	.footer-links {
 		flex-direction: row;
 		align-items: start;
@@ -67,41 +81,51 @@
 		width: 100%;
 	}
 
+	/* Increase gap in footer content */
 	.footer-content {
 		gap: 50px;
 	}
 }
 
+/* Media query for large devices */
 @media screen and (min-width: 1024px) {
+	/* Sidebar padding and gap */
 	.sidebar-left,
 	.sidebar-right {
 		gap: 20px;
 		padding: 20px;
 	}
 
+	/* Increase gap in the main container */
 	.main-container {
 		gap: 80px;
 	}
 
+	/* Increase padding for banner */
 	.banner {
 		padding: 20px 40px;
 	}
 
+	/* Action button padding and font size */
 	.action-button {
 		padding: 20px 40px;
 		font-size: 24px;
 	}
 
+	/* Footer padding adjustments */
 	.footer {
 		padding: 5rem 2rem 2rem;
 	}
 
+	/* Larger gap in footer content */
 	.footer-content {
 		gap: 100px;
 	}
 }
 
+/* Media query for extra large devices*/
 @media screen and (min-width: 1280px) {
+	/* Align container content to the start */
 	.container,
 	.container-content {
 		justify-content: start;
@@ -109,6 +133,7 @@
 		text-align: start;
 	}
 
+	/* Add padding to main container */
 	.main-container {
 		padding: 2rem 7rem;
 	}

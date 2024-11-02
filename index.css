@@ -1,5 +1,7 @@
+/* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+/* Reset and universal font */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -11,11 +13,14 @@ body {
 	margin: 0;
 }
 
+/* Layout structure */
 .layout {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 }
+
+/* Navbar styles */
 .navbar {
 	display: flex;
 	justify-content: center;
@@ -57,9 +62,10 @@ nav {
 	flex-direction: row;
 }
 
+/* Navbar link styles */
 nav a {
 	padding: 5px 10px;
-	transition: all 0.5s;
+	transition: all 0.5s; /* Smooth transition */
 	border-radius: 20px;
 	background-color: transparent;
 }
@@ -69,6 +75,7 @@ nav a {
 	color: #133e87;
 }
 
+/* Login button */
 .login {
 	display: flex;
 	align-items: center;
@@ -86,10 +93,11 @@ nav a {
 
 .login:hover {
 	background-color: #cbdceb;
-	transform: scale(0.95);
-	transform: translateX(5px);
+	transform: scale(0.95); /* Slight shrink effect */
+	transform: translateX(5px); /* Shift horizontally */
 }
 
+/* Main content area */
 .main-content {
 	height: 100vh;
 	overflow: auto;
@@ -97,6 +105,8 @@ nav a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	flex: 1;
+	padding: 1rem;
 }
 
 .content {
@@ -121,6 +131,7 @@ nav a {
 	margin-top: 2rem;
 }
 
+/* Action button */
 .action-button {
 	background-color: #133e87;
 	color: #f3f3e0;
@@ -137,11 +148,12 @@ nav a {
 
 .action-button:hover {
 	background-color: #f3f3e0;
-	transform: scale(1.05);
-	transform: translateY(-5px);
+	transform: scale(1.05); /* Slightly enlarges */
+	transform: translateY(-5px); /* Moves button up */
 	color: #133e87;
 }
 
+/* General container */
 .container {
 	display: flex;
 	align-items: center;
@@ -164,6 +176,7 @@ nav a {
 	gap: 20px;
 }
 
+/* Sidebars */
 .sidebar-left,
 .sidebar-right {
 	overflow-x: auto;
@@ -172,6 +185,7 @@ nav a {
 	flex-direction: row;
 }
 
+/* Box sections in sidebars */
 .currency-box,
 .user,
 .wallet,
@@ -193,6 +207,7 @@ nav a {
 	width: 32px;
 }
 
+/* Custom scrollbars */
 .sidebar-left::-webkit-scrollbar,
 .sidebar-right::-webkit-scrollbar,
 .main-content::-webkit-scrollbar {
@@ -214,6 +229,7 @@ nav a {
 	border-radius: 40px;
 }
 
+/* Currency and user info */
 .currency,
 .currency-info {
 	flex-direction: column;
@@ -240,6 +256,7 @@ nav a {
 	color: #133e87;
 }
 
+/* User and wallet buttons */
 .user-info button,
 .wallet-buttons button {
 	background-color: #133e87;
@@ -273,6 +290,7 @@ nav a {
 	gap: 5px;
 }
 
+/* Action section */
 .action {
 	white-space: nowrap;
 	background-color: #cbdceb;
@@ -281,10 +299,7 @@ nav a {
 	border: 1px solid #133e87;
 }
 
-.main-content {
-	flex: 1;
-	padding: 1rem;
-}
+/* Footer styles */
 .footer {
 	background-color: #133e87;
 	color: #f3f3e0;
@@ -311,6 +326,7 @@ nav a {
 	flex-direction: column;
 }
 
+/* Footer link styles */
 .link-container {
 	display: flex;
 	flex-direction: column;
@@ -326,5 +342,5 @@ nav a {
 
 .footer-link.disabled {
 	color: #000;
-	cursor: default;
+	cursor: default; /* Disabled state */
 }
