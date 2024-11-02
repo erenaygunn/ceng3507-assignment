@@ -31,10 +31,16 @@
 	/* Currency box styling */
 	.currency-box {
 		flex-direction: column;
-		border: none;
 		gap: 5px;
 		background-color: #cbdceb;
 		border-radius: 15px;
+	}
+
+	.currency-box,
+	.wallet,
+	.user,
+	.actions {
+		border: none;
 	}
 
 	/* Adjust gap in actions section */
@@ -66,6 +72,20 @@
 		padding: 30px 40px;
 	}
 
+	/* Sidebar gap */
+	.sidebar-right {
+		gap: 60px;
+	}
+
+	/* Add padding and bg color to right sidebar elements */
+	.user,
+	.wallet,
+	.actions {
+		padding: 12px 6px;
+		background-color: #cbdceb;
+		border-radius: 15px;
+	}
+
 	/* Banner styling */
 	.banner {
 		background-color: #133e87;
@@ -93,6 +113,13 @@
 	.sidebar-left,
 	.sidebar-right {
 		gap: 20px;
+		padding: 20px;
+	}
+
+	/* Increase padding of right sidebar elements */
+	.user,
+	.wallet,
+	.actions {
 		padding: 20px;
 	}
 
